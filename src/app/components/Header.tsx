@@ -1,13 +1,9 @@
 import Image from "next/image";
 
-type HeaderProps = {
-  children: React.ReactNode;
-};
-
 // 헤더 컴포넌트
-const Header: React.FC<HeaderProps> = ({ children }) => {
+const Header = () => {
   return (
-    <header className="w-full h-[60px] flex items-center border-b border-b-slate-200">
+    <header className="bg-white w-full h-[60px] flex items-center border-b border-b-slate-200">
       <div className="w-full max-w-[1200px] px-4 md:px-6 flex items-center ">
         {/* 모바일일 때 이미지*/}
         <Image
