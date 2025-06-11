@@ -1,9 +1,11 @@
 interface PlusIconProps {
   className?: string;
+  strokeWidth?: number;
 }
 
 export default function PlusIcon({
   className = "w-4 h-4 stroke-slate-900",
+  strokeWidth = 2,
 }: PlusIconProps) {
   return (
     <svg
@@ -18,7 +20,7 @@ export default function PlusIcon({
         x2="6"
         y2="10"
         stroke="currentColor"
-        strokeWidth="2"
+        strokeWidth={strokeWidth}
         strokeLinecap="round"
         vectorEffect="non-scaling-stroke"
       />
@@ -28,7 +30,7 @@ export default function PlusIcon({
         x2="10"
         y2="6"
         stroke="currentColor"
-        strokeWidth="2"
+        strokeWidth={strokeWidth}
         strokeLinecap="round"
         vectorEffect="non-scaling-stroke"
       />

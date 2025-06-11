@@ -2,12 +2,15 @@ interface CheckIconProps {
   size?: number;
   bgColor?: string;
   checkColor?: string;
+  strokeWidth?: number;
 }
 
 export default function CheckIcon({
   size = 32,
-  bgColor = "#7C3AED", // 보라색
-  checkColor = "#FAF8F1", // 아이보리-화이트
+  bgColor = "#7C3AED",
+  checkColor = "#FAF8F1",
+  strokeWidth = 3,
+
 }: CheckIconProps) {
   return (
     <svg
@@ -23,7 +26,7 @@ export default function CheckIcon({
       <path
         d="M7 12.5L10.5 16L17 9"
         stroke={checkColor}
-        strokeWidth="3"
+        strokeWidth={strokeWidth}
         strokeLinecap="round"
         strokeLinejoin="round"
         fill="none"

@@ -1,4 +1,3 @@
-
 import CheckIcon from "./icons/CheckIcon";
 
 const DoneList = () => {
@@ -7,7 +6,9 @@ const DoneList = () => {
       <button className="mr-4">
         <CheckIcon />
       </button>
-      <p className="text-[16px] text-slate-800 font-normal line-through">비타민 챙겨먹기</p>
+      <p className=" text-slate-800 font-normal line-through">
+        비타민 챙겨먹기
+      </p>
     </div>
   );
 };

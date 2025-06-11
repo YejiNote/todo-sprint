@@ -8,8 +8,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-nanumSquare: var(--font-nanumSquare);
+  --font-nanumSquareBold: var(--font-nanumSquareBold);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +22,21 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-nanumSquare, --font-nanumSquareBold);
+}
+
+#memo::-webkit-scrollbar {
+  width: 4px;
+}
+
+#memo::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#memo::-webkit-scrollbar-thumb {
+  background-color: #fde68a;
+  border-radius: 3px;
+  /* border: 4px solid transparent; */
+  background-clip: content-box;
+  min-height: 10px;
 }
