@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-
 import CheckIcon from "./icons/CheckIcon";
 import PlusIcon from "./icons/PlusIcon";
 import Image from "next/image";
