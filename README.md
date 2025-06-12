@@ -2,6 +2,8 @@
 
 코드잇 프론트엔드 지원자 과제로 Next.js와 Typescript 기반의 투두 리스트 프로젝트를 반응형으로 구현하였습니다.
 
+배포url : https://todo-sprint-g13y.vercel.app/
+
 ##  주요 기능
 
 ###  메인 페이지
@@ -39,7 +41,6 @@ app/
    ├── lib/fetchers/ # fetcher 함수들 (post, patch, delete)
    
    └── types/ # 타입 정의
-
 
 
 ## 아쉬운 점
