@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const DoneImageButton = () => {
   return (
-    <div className="mt-12 mb-4">
+    <div className="mt-12 tablet:mt-10 mb-4">
       <Image src={"/images/button_done.png"} width={101} height={36} alt="DONE" />
     </div>
   );

@@ -1,8 +1,6 @@
-export type TodoDetail = {
-    id: number;
-    name: string;
-    isCompleted: boolean;
-    imageUrl: string;
-    memo: string;
-    tenantId: string;
-  };
+import { TodoList } from "./todoList";
+
+export interface TodoDetail extends TodoList {
+  imageUrl: string | null;
+  memo: string | null;
+}

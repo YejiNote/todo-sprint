@@ -19,7 +19,7 @@ const TodoSection = () => {
   const doneItems = todoList.filter((todo) => todo.isCompleted);
 
   return (
-    <div className="w-full flex flex-col content:flex-row content:gap-x-6">
+    <div className="w-full flex flex-col content:flex-row content:gap-x-6 pb-[210px]">
       {/* Todo */}
       <div className="w-full">
         <TodoImageButton />

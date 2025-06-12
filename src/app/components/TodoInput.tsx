@@ -15,13 +15,10 @@ const TodoInput = () => {
   const isDoneEmpty = todoList.filter((t) => t.isCompleted).length === 0;
   const isAllEmpty = isTodoEmpty && isDoneEmpty;
   useEffect(() => {
-    console.log("✅ useEffect 실행됨");
-    // 혹시 여기서 handleAdd() 호출되어 있지 않은지 꼭 확인
+   
   }, []);
   // 추가하기 버튼 클릭 시 할일 등록
   const handleAdd = async () => {
-    console.log("📌 handleAdd 실행됨");
-    console.count("📌 handleAdd 호출 수");
     if (!text.trim()) return;
 
     try {
