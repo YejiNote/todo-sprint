@@ -6,7 +6,7 @@ import PlusIcon from "./icons/PlusIcon";
 import Image from "next/image";
 import useTodoDetail from "../hooks/useTodoDetail";
 import Header from "./Header";
-import { TodoDetail } from "../types/todoDetail";
+import type { TodoDetail } from "../types/todoDetail";
 import { useRouter } from "next/navigation";
 import { patchFetcher } from "../lib/fetchers/patchFecher";
 import { directPostFetcher } from "../lib/fetchers/directPostFecher";
