@@ -33,6 +33,7 @@ app/
    ├── components/ # UI 컴포넌트 모음
 
    ├── hooks/ # custom hooks (e.g. useTodoDetail)
+   
    ├── store/ # Zustand store
 
    ├── lib/fetchers/ # fetcher 함수들 (post, patch, delete)
