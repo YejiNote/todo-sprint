@@ -6,7 +6,14 @@ import PlusIcon from "@/app/components/icons/PlusIcon";
 import Image from "next/image";
 import { useRef } from "react";
 
-export default function TodoDetailPage({ params }: { params: { id: string } }) {
+interface PageProps {
+  params: {
+    itemId: string;
+  };
+}
+
+export default function TodoDetailPage({ params }: PageProps) {
+  const { itemId } = params;
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
   const handleInput = () => {

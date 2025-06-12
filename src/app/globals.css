@@ -10,6 +10,11 @@
   --color-foreground: var(--foreground);
   --font-nanumSquare: var(--font-nanumSquare);
   --font-nanumSquareBold: var(--font-nanumSquareBold);
+
+  --breakpoint-*: initial;
+  --breakpoint-tablet: 744px;
+  --breakpoint-content: 1200px;
+  --breakpoint-desktop: 1920px;
 }
 
 @media (prefers-color-scheme: dark) {

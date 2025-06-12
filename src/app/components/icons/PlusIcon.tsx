@@ -4,7 +4,7 @@ interface PlusIconProps {
 }
 
 export default function PlusIcon({
-  className = "w-4 h-4 stroke-slate-900",
+  className = "w-4 h-4 stroke-slate-900 align-middle",
   strokeWidth = 2,
 }: PlusIconProps) {
   return (
